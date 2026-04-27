@@ -10,3 +10,12 @@ public:
         cout << "NIM: " << nim << endl;
     }
 };
+
+int main()
+{
+    mahasiswa *mhs = new mahasiswa{1}; //pointer Object mhs
+    mhs->nim = 2;
+    mhs->showNim();
+    delete mhs; //menghapus pointer mhs
+    return 0;
+}
